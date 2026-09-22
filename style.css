@@ -1,0 +1,244 @@
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CONFIGURAÇÕES GERAIS */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3f0df;
+    color: #171717;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* CABEÇALHO */
+header {
+    width: 100%;
+    padding: 24px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #171717;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+}
+
+.status {
+    font-size: 13px;
+    font-weight: bold;
+    color: #367346;
+}
+
+/* CONTEÚDO PRINCIPAL */
+main {
+    width: 86%;
+    max-width: 1200px;
+    margin: 65px auto;
+    flex: 1;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+/* APRESENTAÇÃO */
+.tag {
+    display: inline-block;
+    background: #171717;
+    color: #f3f0df;
+    padding: 8px 14px;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 24px;
+}
+
+.apresentacao h1 {
+    font-size: clamp(40px, 5vw, 70px);
+    line-height: 0.98;
+    letter-spacing: -3px;
+    font-weight: 900;
+}
+
+.apresentacao h1 span {
+    color: #d97732;
+}
+
+.apresentacao > p {
+    margin-top: 25px;
+    font-size: 17px;
+    line-height: 1.6;
+    max-width: 400px;
+    color: #55544d;
+}
+
+/* INFORMAÇÃO */
+.informacao {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 35px;
+}
+
+.icone {
+    width: 40px;
+    height: 40px;
+    background: #d97732;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+.informacao strong {
+    font-size: 15px;
+}
+
+.informacao p {
+    font-size: 13px;
+    color: #66645c;
+    margin-top: 4px;
+}
+
+/* CARD DO FORMULÁRIO */
+.card-formulario {
+    background: white;
+    padding: 38px;
+    border: 2px solid #171717;
+    box-shadow: 8px 8px 0 #171717;
+}
+
+.titulo-formulario {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 30px;
+}
+
+.icone-titulo {
+    font-size: 28px;
+}
+
+.titulo-formulario h2 {
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.titulo-formulario p {
+    font-size: 13px;
+    color: #777;
+    margin-top: 5px;
+}
+
+/* CAMPOS */
+form label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+form input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+
+    border: 1.5px solid #c8c6bd;
+    border-radius: 4px;
+
+    font-size: 14px;
+    background: #fafaf8;
+    color: #171717;
+}
+
+form input:focus {
+    outline: 2px solid #d97732;
+    border-color: #d97732;
+}
+
+form input::placeholder {
+    color: #999;
+}
+
+/* BOTÃO */
+button {
+    width: 100%;
+    padding: 16px;
+
+    background: #171717;
+    color: white;
+
+    border: 2px solid #171717;
+    border-radius: 4px;
+
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #d97732;
+    border-color: #d97732;
+    transform: translateY(-2px);
+}
+
+/* RESULTADO */
+#resultado {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+/* RODAPÉ */
+footer {
+    text-align: center;
+    padding: 25px;
+    font-size: 12px;
+    color: #777;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 850px) {
+    main {
+        grid-template-columns: 1fr;
+        gap: 45px;
+        margin: 40px auto;
+    }
+
+    .apresentacao h1 {
+        font-size: 48px;
+    }
+
+    header {
+        padding: 20px 7%;
+    }
+
+    .card-formulario {
+        padding: 28px;
+    }
+}
+
+@media (max-width: 450px) {
+    .apresentacao h1 {
+        font-size: 40px;
+    }
+
+    .card-formulario {
+        box-shadow: 5px 5px 0 #171717;
+    }
+}

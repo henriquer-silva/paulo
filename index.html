@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro de Alunos Gavião</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            🎓 EduCadastro
+        </div>
+
+        <span class="status">
+            ● Sistema online
+        </span>
+    </header>
+
+    <main>
+
+        <section class="apresentacao">
+            <span class="tag">SISTEMA ACADÊMICO DE LOGINS </span>
+
+            <h1>
+                Cadastro de<br>
+                <span>Alunos Gavião</span>
+            </h1>
+
+            <p>
+                Organize as informações dos alunos
+                de forma simples, rápida e eficiente.
+            </p>
+
+            <div class="informacao">
+                <div class="icone">✓</div>
+
+                <div>
+                    <strong>Cadastro fácil</strong>
+                    <p>Preencha os dados e envie para o sistema.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="card-formulario">
+
+            <div class="titulo-formulario">
+                <span class="icone-titulo">👤</span>
+
+                <div>
+                    <h2>Novo aluno</h2>
+                    <p>Preencha as informações abaixo</p>
+                </div>
+            </div>
+
+            <form id="formulario">
+
+                <label for="nome">Nome completo</label>
+                <input
+                    type="text"
+                    id="nome"
+                    placeholder="Digite o nome do aluno"
+                    required
+                >
+
+                <label for="idade">Idade</label>
+                <input
+                    type="number"
+                    id="idade"
+                    placeholder="Digite a idade"
+                    min="1"
+                    required
+                >
+
+                <label for="curso">Curso</label>
+                <input
+                    type="text"
+                    id="curso"
+                    placeholder="Ex: Informática"
+                    required
+                >
+
+                <button type="submit">
+                    Cadastrar aluno →
+                </button>
+
+                <p id="resultado"></p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        Projeto acadêmico • Sistema de Cadastro de Alunos
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
